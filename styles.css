@@ -61,6 +61,7 @@ width: 30vw;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     display: flex;
+    text-decoration: none;
 }
 .delivery-lucation-second-icons-1{
      
@@ -75,6 +76,7 @@ width: 30vw;
 }
 .searchbar{
     display: flex;
+    padding: 10px;
     justify-content: center;
     -webkit-box-pack: center;
     -webkit-box-align: center;
@@ -88,12 +90,14 @@ width: 30vw;
     height: 40px;
     width: 100%;
     display: flex;
+    /* overflow: hidden; */
     gap :8px;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 12px;
         background: rgb(248, 248, 248);
     color: rgb(130, 130, 130);
     box-shadow: none;
+    text-decoration: none;
 }
 .searchbar-battun-icons{
     width: 20px;
@@ -110,11 +114,44 @@ width: 30vw;
 }
 .searchbar-battun-input{
     width: 100%;
-}
-li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
-    line-height: 40px;
-    letter-spacing: 3px;
+
+}
+.searchbar-battun-input ul{
+    overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0 ;
+  min-width: 20rem;
+  height: 1.5em; 
+  list-style: none;
+  text-decoration: none;
+}
+.searchbar-battun-input ul li{
+    text-decoration: none;
+    list-style: none;
+    animation: rotate-the-words 10s infinite;
+  display: block;
+  height: 1.5em; /* Match container height */
+  line-height: 1.5em;
+}
+
+@keyframes rotate-the-words {
+  0%   { transform: translateY(0); }
+  10%  { transform: translateY(0); }
+  20%  { transform: translateY(-100%); }
+  30%  { transform: translateY(-100%); }
+  40%  { transform: translateY(-200%); }
+  50%  { transform: translateY(-200%); }
+  60%  { transform: translateY(-300%); }
+  70%  { transform: translateY(-300%); }
+  80%  { transform: translateY(-400%); }
+  90%  { transform: translateY(-400%); }
+  100% { transform: translateY(-500%); }
 }
 
 .buttons{
@@ -307,6 +344,17 @@ li{
     width: 100%;
   }
 }
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #4e4c4c;
+    color: white;
+}
 .footer{
     width: 92vw;
    height: 75vh;
@@ -314,19 +362,20 @@ li{
     gap: 10px;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: #ffffff;
+    /* background-co?lor: #ad6c6c; */
 }
 .left, 
 .right{
     flex: 1;
 }
 .left h3{
-    color: #615e5ebb;
+    color: #ffffff;
     padding: 20px;
 }
 
 .footer-useful{
     display: grid;
+    color: white;
     width: 35vw;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -339,7 +388,7 @@ li{
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: #636060ad;
+    color: #ffffff;
 }
 
 .right-header{
@@ -353,13 +402,13 @@ li{
     margin-left: 50px;
 }
 .right-header h3{
-    color: #5856569c;
+    color: #ffffff;
     align-items: start;
     /* padding: 20px; */
     justify-content: space-between;
 }
 .right-header a{
-    color: #2be72b;
+    color: #14f514;
     font-size: 20px;
     padding: 20px;
     margin-right: 28.5%;
@@ -390,15 +439,18 @@ li{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    color: #6d6a6a9c;
+    color: #ffffff;
 }
 .first-div{
     font-size: 15px;
     width: 30vw;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    color: #6d6a6a9c;
+    color: #ffffff;
     padding: 5px;
+}
+.third-div svg{
+    fill: #ffffff;
 }
 .second-div{
     gap: 20px;
@@ -433,5 +485,33 @@ li{
 
 }
 .Copyright p{
-    color: #6b6969;
+    color: #ffffff;
+}
+.arbaj{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.arbaj h1{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    
+}
+.arbaj strong{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+.arbaj a{
+    list-style: none;   
+    text-decoration: none;
 }
